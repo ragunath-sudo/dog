@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cozy Tea Shop</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f5f1ea;
+            color: #4b3b2b;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #a67c00;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            font-weight: 700;
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 600;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: 30px auto;
+        }
+        h2 {
+            border-bottom: 2px solid #a67c00;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .menu {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .tea-item {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 8px rgba(0,0,0,0.1);
+            padding: 15px;
+            flex: 1 1 220px;
+            transition: transform 0.2s;
+        }
+        .tea-item:hover {
+            transform: translateY(-5px);
+        }
+        .tea-item img {
+            width: 100%;
+            border-radius: 6px;
+            margin-bottom: 10px;
+        }
+        .tea-item h3 {
+            margin: 10px 0 5px;
+            font-size: 1.4em;
+        }
+        .tea-item p {
+            font-size: 0.95em;
+            color: #6b5e41;
+            margin-bottom: 10px;
+        }
+        .price {
+            font-weight: 700;
+            color: #a67c00;
+            font-size: 1.1em;
+        }
+        footer {
+            background-color: #a67c00;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Cozy Tea Shop</h1>
+        <nav>
+            <a href="#menu">Menu</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section id="menu">
+            <h2>Our Tea Menu</h2>
+            <div class="menu">
+                <div class="tea-item">
+                    <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=400&q=80" alt="Green Tea" />
+                    <h3>Green Tea</h3>
+                    <p>Fresh and light with a soothing aroma.</p>
+                    <div class="price">$3.50</div>
+                </div>
+                <div class="tea-item">
+                    <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80" alt="Black Tea" />
+                    <h3>Black Tea</h3>
+                    <p>Bold and rich flavor for your morning boost.</p>
+                    <div class="price">$3.00</div>
+                </div>
+                <div class="tea-item">
+                    <img src="https://images.unsplash.com/photo-1528825871115-3581a5387919?auto=format&fit=crop&w=400&q=80" alt="Herbal Tea" />
+                    <h3>Herbal Tea</h3>
+                    <p>Relaxing blends of chamomile, mint, and more.</p>
+                    <div class="price">$4.00</div>
+                </div>
+                <div class="tea-item">
+                    <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=400&q=80" alt="Chai Tea" />
+                    <h3>Chai Tea</h3>
+                    <p>Spiced and creamy with a warming kick.</p>
+                    <div class="price">$4.50</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" style="margin-top: 50px;">
+            <h2>About Us</h2>
+            <p>At Cozy Tea Shop, we believe in bringing the finest teas to your cup, brewed with love and tradition. Whether you want a calming herbal blend or a strong black tea, we’ve got your cravings covered.</p>
+        </section>
+
+        <section id="contact" style="margin-top: 50px;">
+            <h2>Contact</h2>
+            <p>Email: contact@cozyteashop.com</p>
+            <p>Phone: +1 (555) 123-4567</p>
+            <p>Address: 123 Tea Lane, Flavor Town</p>
+        </section>
+    </div>
+
+    <footer>
+        &copy; 2025 Cozy Tea Shop. All rights reserved.
+    </footer>
+</body>
+</html>
+
